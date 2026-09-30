@@ -1,0 +1,78 @@
+/**
+ * AURA Design System — Centralized Visual Tokens
+ * Phase 2 Visual Identity
+ */
+
+:root {
+  /* Environment Foundation */
+  --aura-void: #02040A;
+  --aura-space: #080B18;
+  --aura-navy: #0A0B16;
+
+  /* Primary Energy Signatures */
+  --aura-amber: #E5A93C;
+  --aura-amber-glow: #FF9D00;
+  --aura-gold: #FFD700;
+  --aura-orange: #FF5500;
+  --aura-hotspot: #FFF7C2;
+
+  /* Dynamic State Accents */
+  --aura-idle: #E5A93C;
+  --aura-listening: #3CE5D9;
+  --aura-thinking: #8B5CF6;
+  --aura-speaking: #FF9D00;
+  --aura-executing: #EF4444;
+
+  /* Interface HUD Glass & Border Tokens */
+  --aura-glass-bg: rgba(8, 11, 24, 0.60);
+  --aura-glass-border: rgba(229, 169, 60, 0.15);
+  --aura-hud-line: rgba(229, 169, 60, 0.12);
+  --aura-hud-text-dim: rgba(148, 163, 184, 0.65);
+}
+
+/* Typography Utility Classes */
+.font-telemetry {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.font-state {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.font-conversational {
+  font-family: 'Inter', 'Space Grotesk', sans-serif;
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+/* Visual Glow & Glass Primitives */
+.aura-glass {
+  background: var(--aura-glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--aura-glass-border);
+}
+
+.aura-glow-amber {
+  text-shadow: 0 0 16px rgba(229, 169, 60, 0.4), 0 0 32px rgba(255, 157, 0, 0.2);
+}
+
+.aura-glow-cyan {
+  text-shadow: 0 0 16px rgba(60, 229, 217, 0.4), 0 0 32px rgba(0, 240, 255, 0.2);
+}
+
+.aura-glow-violet {
+  text-shadow: 0 0 16px rgba(139, 92, 246, 0.4), 0 0 32px rgba(139, 92, 246, 0.2);
+}
+
+.aura-glow-crimson {
+  text-shadow: 0 0 16px rgba(239, 68, 68, 0.4), 0 0 32px rgba(239, 68, 68, 0.2);
+}
